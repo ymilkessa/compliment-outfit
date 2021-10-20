@@ -8,7 +8,6 @@ Text-to-speech feature adopted from:
     https://www.geeksforgeeks.org/convert-text-speech-python/
 """
 
-# import os
 from playsound import playsound
 from gtts import gTTS
 import time
@@ -16,6 +15,9 @@ import os
 
 
 def play_text_as_audio (text_string):
+    """
+    Converts the text into an audio file. Plays and then deletes that audio file
+    """
     tts = gTTS(text_string, lang='en')
     f_name = f"speech_{round(time.time())}.mp3"
     tts.save(f_name)
