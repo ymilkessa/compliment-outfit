@@ -23,7 +23,10 @@ def play_text_as_audio (text_string):
     tts.save(f_name)
 
     # f_name is now like an mp3 file
-    playsound(f_name)
+    try:
+        playsound(f_name)
+    except:
+        print ("Something went wrong")
 
     # The program should wait until the adio is played, and then delete the file
     os.remove (f_name)
