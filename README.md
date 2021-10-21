@@ -9,3 +9,8 @@ The only external libraries used in the scripts are:
 - gtts
 
 This was designed to run on a small machine (was built and tested on a Windows laptop)
+
+
+### Usage
+After downloading this repo, go into the directory and run
+`$ python3 identify_color_in_outfit.py`
